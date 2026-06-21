@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pranav Rajyaguru</title>
+  <meta name="description" content="Personal portfolio for Pranav Rajyaguru, an aeronautical engineer and hobby drone pilot." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;900&family=Inter:wght@800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+<body class="min-h-screen">
+  <main class="page-shell">
+    <header class="flex justify-end pb-3">
+      <button id="themeToggle" class="icon-btn" type="button" aria-label="Toggle dark mode" title="Toggle dark mode">
+        <svg class="moon-icon" viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M21 12.8A9 9 0 1 1 11.2 3 7 7 0 0 0 21 12.8z"></path>
+        </svg>
+        <svg class="sun-icon" viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="12" cy="12" r="5"></circle>
+          <path d="M12 1v2M12 21v2M4.2 4.2l1.4 1.4M18.4 18.4l1.4 1.4M1 12h2M21 12h2M4.2 19.8l1.4-1.4M18.4 5.6l1.4-1.4"></path>
+        </svg>
+      </button>
+    </header>
+
+    <section class="intro-section">
+      <img class="profile-photo" src="assets/profile-round.jpg" alt="Pranav Rajyaguru" />
+      <p class="intro-kicker">Hey, my name is</p>
+      <h1>Pranav Rajyaguru</h1>
+
+      <div class="contact-row">
+        <p><strong>Email: rpj31195@gmail.com</strong></p>
+        <div class="socials" aria-label="Social links">
+          <a class="social-pill" href="#" aria-label="GitHub">
+            <img src="https://cdn.simpleicons.org/github/444444" data-icon="github" alt="" />
+          </a>
+          <a class="social-pill" href="https://www.linkedin.com/in/pranavrajyaguru/" aria-label="LinkedIn" target="_blank" rel="noopener">
+            <span class="linkedin-mark" aria-hidden="true">in</span>
+          </a>
+        </div>
+      </div>
+
+      <p>
+        I am an aeronautical engineer, RC model aircraft member, and hobby drone pilot with A1, A2,
+        and A3 licenses. My interests focus on integrating autonomy into aircraft systems, including
+        GPS navigation, telemetry, and ArduPilot-based flight controllers.
+      </p>
+
+      <div class="logo-strip">
+        <p>Previously worked with:</p>
+        <img class="company-logo wide" src="https://cdn.simpleicons.org/audi/444444" data-icon="audi" alt="Audi" />
+        <img class="company-logo wide" src="https://cdn.simpleicons.org/porsche/444444" data-icon="porsche" alt="Porsche" />
+      </div>
+
+      <p>
+        Here are a few projects I am proud of. The format is designed for short case studies,
+        hackathon work, research notes, or anything else that deserves a small spotlight.
+      </p>
+    </section>
+
+    <section class="filter-bar" aria-label="Project filters">
+      <button class="filter-btn active" type="button" data-filter="all">All</button>
+      <button class="filter-btn" type="button" data-filter="featured">Featured</button>
+      <button class="filter-btn" type="button" data-filter="hackathon">Hackathon</button>
+      <button class="filter-btn" type="button" data-filter="personal">Personal</button>
+    </section>
+
+    <section class="projects-grid" aria-label="Selected projects">
+      <article class="project-card featured-card" data-category="featured">
+        <div class="feature-media">
+          <img src="https://images.unsplash.com/photo-1473968512647-3e447244af8f?auto=format&fit=crop&w=1200&q=80" alt="Drone flying over a landscape" />
+        </div>
+        <div class="project-body feature-body">
+          <div class="pill-row">
+            <span class="pill blue"><span class="live-dot"></span> In Progress</span>
+          </div>
+          <h2>Fault-Tolerant Robotics Lab</h2>
+          <p>
+            Designing, simulating, and testing a resilient autonomous platform that can keep operating
+            when hardware behaves badly. The project blends embedded software, control systems, and
+            reinforcement learning.
+          </p>
+
+          <p class="section-label">Build Progress</p>
+          <div class="progress-track" aria-label="Build progress">
+            <span class="done">CAD</span>
+            <span class="done">Prototype</span>
+            <span class="active">Policy Training</span>
+            <span>Field Test</span>
+          </div>
+
+          <div class="mini-log">
+            <a href="#"><span>Jun 18</span>Bench test passed with redundant sensor stream</a>
+            <a href="#"><span>Jun 10</span>First autonomous recovery simulation completed</a>
+            <a href="#"><span>Jun 03</span>Airframe and controller layout locked</a>
+          </div>
+
+          <div class="project-links">
+            <a class="project-link highlight-link" href="#">Follow the build</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card" data-category="hackathon">
+        <img class="project-image" src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=900&q=80" alt="Analytics dashboard screens" />
+        <div class="project-body">
+          <div class="pill-row">
+            <span class="pill amber">Hackathon</span>
+            <span class="pill green">Winner</span>
+          </div>
+          <h2>SignalLens</h2>
+          <p>
+            A developer tool that turns messy event logs into searchable timelines, anomaly summaries,
+            and shareable debugging snapshots.
+          </p>
+          <div class="project-links">
+            <a class="project-link highlight-link" href="#">Try it out</a>
+            <a class="project-link" href="#">GitHub</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card" data-category="personal">
+        <img class="project-image" src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=900&q=80" alt="Code editor on a laptop" />
+        <div class="project-body">
+          <div class="pill-row">
+            <span class="pill slate">Personal Project</span>
+          </div>
+          <h2>Interface Garden</h2>
+          <p>
+            A collection of tiny interaction experiments focused on calm dashboards,
+            keyboard-friendly controls, and readable visual systems.
+          </p>
+          <div class="project-links">
+            <a class="project-link highlight-link" href="#">View gallery</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card" data-category="hackathon">
+        <img class="project-image" src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=80" alt="Travel planning map on a table" />
+        <div class="project-body">
+          <div class="pill-row">
+            <span class="pill amber">Hackathon</span>
+          </div>
+          <h2>MeetPoint</h2>
+          <p>
+            A travel coordination prototype that compares routes, cost, and schedule friction
+            to recommend fair meetup cities for distributed groups.
+          </p>
+          <div class="project-links">
+            <a class="project-link" href="#">Case study</a>
+            <a class="project-link" href="#">GitHub</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card" data-category="personal">
+        <div class="particle-panel" aria-hidden="true">
+          <span style="--x:12%;--y:22%;--s:14px;"></span>
+          <span style="--x:78%;--y:18%;--s:10px;"></span>
+          <span style="--x:52%;--y:42%;--s:18px;"></span>
+          <span style="--x:24%;--y:70%;--s:11px;"></span>
+          <span style="--x:86%;--y:76%;--s:15px;"></span>
+          <span style="--x:42%;--y:82%;--s:9px;"></span>
+        </div>
+        <div class="project-body">
+          <div class="pill-row">
+            <span class="pill slate">Personal Project</span>
+          </div>
+          <h2>Air Quality Particles</h2>
+          <p>
+            A visual experiment that maps live environmental data into a particle field,
+            making invisible measurements easier to feel at a glance.
+          </p>
+          <div class="project-links">
+            <a class="project-link highlight-link" href="#">Open demo</a>
+            <a class="project-link" href="#">Notes</a>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <footer>
+      <hr />
+      <p>Made with care using HTML5, Tailwind CSS, and JavaScript. Last updated June 2026.</p>
+    </footer>
+  </main>
+</body>
+</html>
