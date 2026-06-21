@@ -295,6 +295,7 @@ h2 {
 .feature-media img {
   width: 100%;
   height: 100%;
+  object-position: center 58%;
 }
 
 .project-body {
