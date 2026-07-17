@@ -407,71 +407,29 @@ h1 {
   margin-bottom: 0.85rem;
 }
 
-.company-mark {
+.company-logo-card {
   align-items: center;
-  display: inline-flex;
-  height: 54px;
+  background: #f5f5f5;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 18px;
+  box-shadow: 0 16px 34px var(--shadow);
+  display: flex;
+  height: 92px;
   justify-content: center;
-  width: max-content;
+  margin-top: 0.35rem;
+  padding: 1rem;
+  width: min(100%, 230px);
 }
 
-.cybex-mark {
-  background: linear-gradient(135deg, var(--accent), #9ce8df);
-  border-radius: 14px;
-  color: #10201d;
-  font-size: 1.8rem;
-  font-weight: 900;
-  height: 54px;
-  letter-spacing: 0;
-  width: 54px;
+.company-logo-card img {
+  max-height: 58px;
+  object-fit: contain;
+  width: 100%;
 }
 
-.audi-mark {
-  justify-content: flex-start;
-  position: relative;
-  width: 118px;
-}
-
-.audi-mark span {
-  border: 3px solid var(--accent);
-  border-radius: 50%;
-  height: 38px;
-  margin-left: -11px;
-  width: 38px;
-}
-
-.audi-mark span:first-child {
-  margin-left: 0;
-}
-
-.porsche-mark {
-  background: linear-gradient(180deg, #f5d278 0 50%, #16120d 50% 100%);
-  border: 2px solid var(--accent);
-  border-radius: 15px 15px 20px 20px;
-  color: #16120d;
-  font-family: var(--font-display);
-  font-size: 1.85rem;
-  font-weight: 700;
-  height: 58px;
-  overflow: hidden;
-  position: relative;
-  width: 48px;
-}
-
-.porsche-mark span {
-  position: relative;
-  top: -2px;
-  z-index: 1;
-}
-
-.porsche-mark::after {
-  background: var(--accent);
-  content: "";
-  height: 100%;
-  opacity: 0.75;
-  position: absolute;
-  transform: rotate(20deg);
-  width: 2px;
+.compact-logo-card img {
+  max-height: 68px;
+  max-width: 150px;
 }
 
 .experience-item ul {
