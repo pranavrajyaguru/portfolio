@@ -1,40 +1,46 @@
-const root = document.documentElement;
-const themeToggle = document.querySelector("#themeToggle");
-const iconImages = document.querySelectorAll("[data-icon]");
-const filterButtons = document.querySelectorAll("[data-filter]");
-const cards = document.querySelectorAll("[data-category]");
+// Mobile menu
 
-function setIconColor(isDark) {
-  const color = isDark ? "999999" : "444444";
-  iconImages.forEach((image) => {
-    image.src = `https://cdn.simpleicons.org/${image.dataset.icon}/${color}`;
-  });
-}
+const menuButton = document.getElementById("menuButton");
+const navLinks = document.getElementById("navLinks");
 
-function setTheme(theme) {
-  const isDark = theme === "dark";
-  root.dataset.theme = isDark ? "dark" : "light";
-  localStorage.setItem("portfolio-theme", root.dataset.theme);
-  setIconColor(isDark);
-}
-
-const savedTheme = localStorage.getItem("portfolio-theme");
-const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-setTheme(savedTheme || (prefersDark ? "dark" : "light"));
-
-themeToggle.addEventListener("click", () => {
-  setTheme(root.dataset.theme === "dark" ? "light" : "dark");
+menuButton.addEventListener("click", function () {
+  navLinks.classList.toggle("open");
 });
 
-filterButtons.forEach((button) => {
-  button.addEventListener("click", () => {
-    const filter = button.dataset.filter;
 
-    filterButtons.forEach((item) => item.classList.remove("active"));
-    button.classList.add("active");
+// Close menu after clicking a link
 
-    cards.forEach((card) => {
-      card.classList.toggle("hidden", filter !== "all" && card.dataset.category !== filter);
-    });
+const menuLinks = document.querySelectorAll(".nav-links a");
+
+menuLinks.forEach(function (link) {
+  link.addEventListener("click", function () {
+    navLinks.classList.remove("open");
+  });
+});
+
+
+// Current year in footer
+
+const currentYear = document.getElementById("currentYear");
+
+currentYear.textContent = new Date().getFullYear();
+
+
+// Back-to-top button
+
+const backToTop = document.getElementById("backToTop");
+
+window.addEventListener("scroll", function () {
+  if (window.scrollY > 500) {
+    backToTop.style.display = "block";
+  } else {
+    backToTop.style.display = "none";
+  }
+});
+
+backToTop.addEventListener("click", function () {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
   });
 });
