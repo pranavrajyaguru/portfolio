@@ -463,10 +463,10 @@ h1 {
 }
 
 .project-feature {
-  align-items: center;
+  align-items: start;
   display: grid;
   gap: 2rem;
-  grid-template-columns: minmax(260px, 0.9fr) 1fr;
+  grid-template-columns: minmax(260px, 0.72fr) 1fr;
   overflow: hidden;
   padding: 1rem;
 }
@@ -479,8 +479,64 @@ h1 {
   width: 100%;
 }
 
-.project-feature div {
+.project-copy {
   padding: 1rem 1rem 1rem 0;
+}
+
+.project-copy > p {
+  margin-bottom: 1.2rem;
+}
+
+.project-highlights,
+.project-phases {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.project-highlights {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.project-highlights div,
+.project-phases article {
+  background: rgba(255, 255, 255, 0.025);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.project-highlights span,
+.project-phases span {
+  color: var(--accent);
+  display: inline-block;
+  font-size: 0.76rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  margin-bottom: 0.4rem;
+  text-transform: uppercase;
+}
+
+.project-phases h3 {
+  font-size: clamp(1.1rem, 1.8vw, 1.35rem);
+  margin-bottom: 0.45rem;
+}
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  margin-top: 1.2rem;
+}
+
+.project-tags span {
+  background: rgba(100, 209, 201, 0.1);
+  border: 1px solid rgba(100, 209, 201, 0.28);
+  border-radius: 999px;
+  color: var(--accent);
+  font-size: 0.82rem;
+  font-weight: 800;
+  padding: 0.35rem 0.7rem;
 }
 
 .contact-section {
@@ -553,8 +609,12 @@ h1 {
     justify-content: center;
   }
 
-  .project-feature div {
+  .project-copy {
     padding: 0.5rem;
+  }
+
+  .project-highlights {
+    grid-template-columns: 1fr;
   }
 
   .card-grid {
