@@ -2,362 +2,174 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0"
-  >
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta
     name="description"
-    content="Personal portfolio website"
+    content="Portfolio for Pranav Rajyaguru, aeronautical engineer and UAV systems builder."
   >
-
-  <title>Your Name | Portfolio</title>
-
+  <title>Pranav Rajyaguru | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;600;700;800&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap"
+    rel="stylesheet"
+  >
   <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+  <header class="site-header">
+    <nav class="nav-shell" aria-label="Primary navigation">
+      <a class="brand" href="#work">Pranav Rajyaguru</a>
 
-  <!-- Navigation -->
-  <header class="header">
-    <nav class="navbar container">
-      <a href="#home" class="logo">YourName.</a>
-
-      <button class="menu-button" id="menuButton">
-        ☰
+      <button class="menu-button" id="menuButton" type="button" aria-label="Open navigation">
+        <span></span>
+        <span></span>
+        <span></span>
       </button>
 
-      <ul class="nav-links" id="navLinks">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+      <div class="nav-actions" id="navLinks">
+        <a class="active" href="#work">Work</a>
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+        <button class="chip-button" type="button" aria-label="Language preference">DE</button>
+        <button class="chip-button theme-toggle" id="themeToggle" type="button" aria-label="Toggle theme">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M21 13.3A8 8 0 1 1 10.7 3a6.6 6.6 0 0 0 10.3 10.3Z"></path>
+          </svg>
+        </button>
+      </div>
     </nav>
   </header>
 
-
   <main>
+    <section class="hero section" id="work">
+      <div class="hero-shell">
+        <div class="portrait-wrap" aria-label="Portrait">
+          <img src="assets/profile-round.jpg" alt="Pranav Rajyaguru" class="portrait">
+        </div>
 
-    <!-- Hero section -->
-    <section class="hero section" id="home">
-      <div class="container hero-grid">
-
-        <div class="hero-text">
-          <p class="small-title">HELLO, MY NAME IS</p>
-
-          <h1>Your Name</h1>
-
-          <h2>I am a Web Developer</h2>
-
-          <p class="hero-description">
-            I create clean, modern and responsive websites.
-            This portfolio shows my skills, experience and projects.
+        <div class="hero-copy">
+          <p class="eyebrow">Aeronautical Engineer</p>
+          <h1>Pranav Rajyaguru</h1>
+          <p class="lead">
+            I help aircraft systems fly smarter with autonomy, telemetry and
+            practical UAV experimentation, <em>before a single part gets built.</em>
           </p>
 
-          <div class="hero-buttons">
-            <a href="#projects" class="button primary-button">
-              View Projects
+          <div class="button-row">
+            <a class="pill-button" href="#contact">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 3v12m0 0 5-5m-5 5-5-5M5 21h14"></path>
+              </svg>
+              Download CV
             </a>
-
-            <a href="#contact" class="button secondary-button">
-              Contact Me
+            <a class="pill-button primary" href="mailto:rpj31195@gmail.com">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M4 6h16v12H4z"></path>
+                <path d="m4 7 8 6 8-6"></path>
+              </svg>
+              Email me
+            </a>
+            <a class="pill-button" href="#contact">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M8 2v4m8-4v4M4 9h16M5 5h14v16H5z"></path>
+              </svg>
+              Book a call
             </a>
           </div>
 
-          <div class="social-links">
-            <a
-              href="https://github.com/YOUR_USERNAME"
-              target="_blank"
-            >
-              GitHub
-            </a>
-
-            <a
-              href="https://linkedin.com/in/YOUR_USERNAME"
-              target="_blank"
-            >
+          <div class="social-row" aria-label="Social links">
+            <a href="https://www.linkedin.com/in/pranavrajyaguru/" target="_blank" rel="noopener">
+              <span class="social-icon linkedin">in</span>
               LinkedIn
             </a>
-
-            <a href="mailto:your@email.com">
-              Email
+            <a href="https://gitlab.com/pranavrajyaguru" target="_blank" rel="noopener">
+              <span class="social-icon gitlab">git</span>
+              GitLab
+            </a>
+            <a href="https://github.com/pranavrajyaguru" target="_blank" rel="noopener">
+              <span class="social-icon github">gh</span>
+              GitHub
             </a>
           </div>
         </div>
-
-
-        <div class="hero-image-wrapper">
-          <img
-            src="assets/profile.jpg"
-            alt="Your Name"
-            class="profile-image"
-          >
-        </div>
-
       </div>
     </section>
 
-
-    <!-- About section -->
-    <section class="section alternate-section" id="about">
-      <div class="container">
-
-        <p class="section-label">ABOUT ME</p>
-        <h2 class="section-title">Who I Am</h2>
-
-        <div class="about-grid">
-
-          <div class="about-text">
-            <p>
-              I am a beginner web developer who enjoys building useful
-              and attractive websites.
-            </p>
-
-            <p>
-              I am learning HTML, CSS, JavaScript and modern web
-              development tools. I enjoy solving problems and improving
-              my skills.
-            </p>
-
-            <p>
-              My goal is to create websites that are simple, fast,
-              accessible and easy to use.
-            </p>
-          </div>
-
-          <div class="about-cards">
-
-            <div class="info-card">
-              <h3>Location</h3>
-              <p>Your City, Country</p>
-            </div>
-
-            <div class="info-card">
-              <h3>Experience</h3>
-              <p>Beginner Developer</p>
-            </div>
-
-            <div class="info-card">
-              <h3>Availability</h3>
-              <p>Open to opportunities</p>
-            </div>
-
-          </div>
-
+    <section class="section split-section" id="about">
+      <div class="content-shell">
+        <p class="section-kicker">About</p>
+        <div>
+          <h2>Autonomous aircraft, grounded in real engineering.</h2>
+          <p>
+            I am an aeronautical engineer, RC model aircraft member and hobby
+            drone pilot with A1/A3 and A2 licenses. My interests focus on
+            integrating autonomy into aircraft systems, including GPS
+            navigation, telemetry and ArduPilot-based flight controllers.
+          </p>
         </div>
       </div>
     </section>
 
-
-    <!-- Skills section -->
-    <section class="section" id="skills">
-      <div class="container">
-
-        <p class="section-label">MY SKILLS</p>
-        <h2 class="section-title">Technologies I Use</h2>
-
-        <div class="skills-grid">
-
-          <div class="skill-card">
-            <h3>HTML</h3>
-            <p>Website structure and semantic content.</p>
-          </div>
-
-          <div class="skill-card">
-            <h3>CSS</h3>
-            <p>Responsive layouts, animations and modern designs.</p>
-          </div>
-
-          <div class="skill-card">
-            <h3>JavaScript</h3>
-            <p>Interactive website features and functionality.</p>
-          </div>
-
-          <div class="skill-card">
-            <h3>Git</h3>
-            <p>Version control and project collaboration.</p>
-          </div>
-
-          <div class="skill-card">
-            <h3>GitLab</h3>
-            <p>Repository management and website deployment.</p>
-          </div>
-
-          <div class="skill-card">
-            <h3>Responsive Design</h3>
-            <p>Websites that work on phones, tablets and computers.</p>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-
-    <!-- Projects section -->
-    <section class="section alternate-section" id="projects">
-      <div class="container">
-
-        <p class="section-label">MY WORK</p>
-        <h2 class="section-title">Featured Projects</h2>
-
-        <div class="projects-grid">
-
-          <article class="project-card">
-            <div class="project-image">
-              <img
-                src="assets/project-1.jpg"
-                alt="Portfolio website project"
-              >
-            </div>
-
-            <div class="project-content">
-              <p class="project-number">PROJECT 01</p>
-
-              <h3>Personal Portfolio</h3>
-
-              <p>
-                A responsive portfolio website for presenting my work,
-                skills and contact information.
-              </p>
-
-              <div class="tags">
-                <span>HTML</span>
-                <span>CSS</span>
-                <span>JavaScript</span>
-              </div>
-
-              <div class="project-links">
-                <a href="#" class="text-link">Live Website</a>
-                <a href="#" class="text-link">Source Code</a>
-              </div>
-            </div>
+    <section class="section split-section" id="experience">
+      <div class="content-shell">
+        <p class="section-kicker">Experience</p>
+        <div class="card-grid">
+          <article class="detail-card">
+            <p>Worked With</p>
+            <h3>Audi and Porsche</h3>
           </article>
-
-
-          <article class="project-card">
-            <div class="project-image">
-              <img
-                src="assets/project-2.jpg"
-                alt="Landing page project"
-              >
-            </div>
-
-            <div class="project-content">
-              <p class="project-number">PROJECT 02</p>
-
-              <h3>Business Landing Page</h3>
-
-              <p>
-                A modern landing page created for a small business or
-                startup.
-              </p>
-
-              <div class="tags">
-                <span>HTML</span>
-                <span>CSS</span>
-              </div>
-
-              <div class="project-links">
-                <a href="#" class="text-link">Live Website</a>
-                <a href="#" class="text-link">Source Code</a>
-              </div>
-            </div>
+          <article class="detail-card">
+            <p>Licenses</p>
+            <h3>A1/A3 and A2 drone pilot</h3>
           </article>
-
-
-          <article class="project-card">
-            <div class="project-image">
-              <img
-                src="assets/project-3.jpg"
-                alt="JavaScript application"
-              >
-            </div>
-
-            <div class="project-content">
-              <p class="project-number">PROJECT 03</p>
-
-              <h3>JavaScript Application</h3>
-
-              <p>
-                A small interactive application built to practise
-                JavaScript.
-              </p>
-
-              <div class="tags">
-                <span>JavaScript</span>
-                <span>CSS</span>
-              </div>
-
-              <div class="project-links">
-                <a href="#" class="text-link">Live Website</a>
-                <a href="#" class="text-link">Source Code</a>
-              </div>
-            </div>
+          <article class="detail-card">
+            <p>Focus</p>
+            <h3>Autonomy, telemetry and flight control</h3>
           </article>
-
         </div>
       </div>
     </section>
 
+    <section class="section split-section" id="projects">
+      <div class="content-shell">
+        <p class="section-kicker">Projects</p>
+        <article class="project-feature">
+          <img src="assets/project-cover.jpg" alt="Fixed wing UAV project on a field">
+          <div>
+            <p class="project-label">In progress</p>
+            <h2>Fixed Wing UAV</h2>
+            <p>
+              Designing, simulating and testing a resilient autonomous platform
+              that can keep operating when hardware behaves badly. The project
+              blends embedded software, control systems and reinforcement
+              learning.
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
 
-    <!-- Contact section -->
-    <section class="section" id="contact">
-      <div class="container contact-container">
-
-        <p class="section-label">CONTACT</p>
-        <h2 class="section-title">Let Us Work Together</h2>
-
-        <p class="contact-description">
-          Have a project, job opportunity or question? Send me a message.
-        </p>
-
-        <a
-          href="mailto:your@email.com"
-          class="button primary-button"
-        >
-          your@email.com
+    <section class="section contact-section" id="contact">
+      <div class="contact-shell">
+        <p class="section-kicker">Contact</p>
+        <h2>Ready to talk aircraft, autonomy or a build?</h2>
+        <a class="pill-button primary" href="mailto:rpj31195@gmail.com">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M4 6h16v12H4z"></path>
+            <path d="m4 7 8 6 8-6"></path>
+          </svg>
+          rpj31195@gmail.com
         </a>
-
-        <div class="contact-links">
-          <a
-            href="https://github.com/YOUR_USERNAME"
-            target="_blank"
-          >
-            GitHub
-          </a>
-
-          <a
-            href="https://linkedin.com/in/YOUR_USERNAME"
-            target="_blank"
-          >
-            LinkedIn
-          </a>
-        </div>
-
       </div>
     </section>
-
   </main>
 
-
   <footer class="footer">
-    <div class="container">
-      <p>
-        © <span id="currentYear"></span> Your Name.
-        All rights reserved.
-      </p>
-    </div>
+    <p>&copy; <span id="currentYear"></span> Pranav Rajyaguru</p>
   </footer>
-
-
-  <button class="back-to-top" id="backToTop">
-    ↑
-  </button>
-
 
   <script src="script.js"></script>
 </body>

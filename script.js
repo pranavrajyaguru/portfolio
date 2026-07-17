@@ -1,46 +1,28 @@
-// Mobile menu
-
 const menuButton = document.getElementById("menuButton");
 const navLinks = document.getElementById("navLinks");
+const themeToggle = document.getElementById("themeToggle");
+const currentYear = document.getElementById("currentYear");
+const root = document.documentElement;
 
-menuButton.addEventListener("click", function () {
+const savedTheme = localStorage.getItem("portfolio-theme");
+if (savedTheme) {
+  root.dataset.theme = savedTheme;
+}
+
+menuButton.addEventListener("click", () => {
   navLinks.classList.toggle("open");
 });
 
-
-// Close menu after clicking a link
-
-const menuLinks = document.querySelectorAll(".nav-links a");
-
-menuLinks.forEach(function (link) {
-  link.addEventListener("click", function () {
+document.querySelectorAll(".nav-actions a").forEach((link) => {
+  link.addEventListener("click", () => {
     navLinks.classList.remove("open");
   });
 });
 
-
-// Current year in footer
-
-const currentYear = document.getElementById("currentYear");
+themeToggle.addEventListener("click", () => {
+  const nextTheme = root.dataset.theme === "light" ? "dark" : "light";
+  root.dataset.theme = nextTheme;
+  localStorage.setItem("portfolio-theme", nextTheme);
+});
 
 currentYear.textContent = new Date().getFullYear();
-
-
-// Back-to-top button
-
-const backToTop = document.getElementById("backToTop");
-
-window.addEventListener("scroll", function () {
-  if (window.scrollY > 500) {
-    backToTop.style.display = "block";
-  } else {
-    backToTop.style.display = "none";
-  }
-});
-
-backToTop.addEventListener("click", function () {
-  window.scrollTo({
-    top: 0,
-    behavior: "smooth"
-  });
-});
