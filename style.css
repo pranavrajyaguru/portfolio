@@ -430,21 +430,18 @@ h1 {
 }
 
 .experience-logo-card .cybex-logo-img {
-  clip-path: inset(24% 6% 24% 6%);
   max-height: none;
-  width: 128px;
+  width: 138px;
 }
 
 .experience-logo-card .audi-logo-img {
-  clip-path: inset(18% 0 18% 0);
   max-height: none;
-  width: 118px;
+  width: 112px;
 }
 
 .experience-logo-card .porsche-logo-img {
-  clip-path: inset(18% 30% 18% 30%);
   max-height: none;
-  width: 128px;
+  width: 52px;
 }
 
 [data-theme="dark"] .experience-logo-card img {
