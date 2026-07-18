@@ -184,71 +184,152 @@
     <section class="section split-section" id="projects">
       <div class="content-shell">
         <p class="section-kicker">Projects</p>
-        <article class="project-feature">
-          <img src="assets/project-cover.jpg" alt="Fixed wing UAV project on a field">
-          <div class="project-copy">
-            <p class="project-label">Autonomous Flight Systems</p>
-            <h2>Autonomous Fixed-Wing UAV using ArduPilot</h2>
-            <p>
-              Designed and implemented a fixed-wing UAV by integrating the
-              ArduPilot open-source autopilot ecosystem with a Pixhawk flight
-              controller. The aircraft was developed for GPS-based waypoint
-              missions while preserving manual override for takeoff, approach
-              and landing.
-            </p>
-
-            <div class="project-highlights">
-              <div>
-                <span>Objective</span>
-                <p>
-                  Build a reliable autonomous aircraft capable of executing
-                  predefined waypoint missions with safe manual control
-                  available during critical flight phases.
-                </p>
-              </div>
-              <div>
-                <span>Outcome</span>
-                <p>
-                  Demonstrated stable transition between manual and AUTO mode,
-                  GPS waypoint execution, telemetry communication and post-flight
-                  log analysis for performance evaluation.
-                </p>
-              </div>
-            </div>
-
-            <div class="project-phases">
-              <article>
-                <span>Phase 01</span>
-                <h3>Manual Flight Testing</h3>
-                <p>
-                  Built and configured the fixed-wing airframe, then validated
-                  stability, propulsion, control surfaces and flight behavior
-                  through manual RC testing.
-                </p>
-              </article>
-              <article>
-                <span>Phase 02</span>
-                <h3>Autonomous Integration</h3>
-                <p>
-                  Integrated Pixhawk, ArduPilot, GPS and telemetry; calibrated
-                  sensors, tuned parameters and developed waypoint missions in
-                  Mission Planner.
-                </p>
-              </article>
-            </div>
-
-            <div class="project-tags" aria-label="Technologies used">
-              <span>ArduPilot</span>
-              <span>Pixhawk</span>
-              <span>Mission Planner</span>
-              <span>MAVLink</span>
-              <span>GPS Navigation</span>
-              <span>Telemetry</span>
-              <span>PID Tuning</span>
-              <span>Flight Log Analysis</span>
-            </div>
+        <div class="project-workspace">
+          <div class="project-tabs" role="tablist" aria-label="Project details">
+            <button
+              class="project-tab active"
+              id="tab-uav"
+              type="button"
+              role="tab"
+              aria-selected="true"
+              aria-controls="panel-uav"
+              data-project-tab="uav"
+            >
+              <span>01</span>
+              Fixed-Wing UAV
+            </button>
+            <button
+              class="project-tab"
+              id="tab-aircraft"
+              type="button"
+              role="tab"
+              aria-selected="false"
+              aria-controls="panel-aircraft"
+              data-project-tab="aircraft"
+            >
+              <span>02</span>
+              Aircraft Systems
+            </button>
+            <button
+              class="project-tab"
+              id="tab-swissloop"
+              type="button"
+              role="tab"
+              aria-selected="false"
+              aria-controls="panel-swissloop"
+              data-project-tab="swissloop"
+            >
+              <span>03</span>
+              Swissloop Tunneling
+            </button>
           </div>
-        </article>
+
+          <article
+            class="project-feature project-panel active"
+            id="panel-uav"
+            role="tabpanel"
+            aria-labelledby="tab-uav"
+            data-project-panel="uav"
+          >
+            <img src="assets/project-cover.jpg" alt="Fixed wing UAV project on a field">
+            <div class="project-copy">
+              <p class="project-label">Autonomous Flight Systems</p>
+              <h2>Autonomous Fixed-Wing UAV using ArduPilot</h2>
+              <p>
+                Designed and implemented a fixed-wing UAV by integrating the
+                ArduPilot open-source autopilot ecosystem with a Pixhawk flight
+                controller. The aircraft was developed for GPS-based waypoint
+                missions while preserving manual override for takeoff, approach
+                and landing.
+              </p>
+
+              <div class="project-highlights">
+                <div>
+                  <span>Objective</span>
+                  <p>
+                    Build a reliable autonomous aircraft capable of executing
+                    predefined waypoint missions with safe manual control
+                    available during critical flight phases.
+                  </p>
+                </div>
+                <div>
+                  <span>Outcome</span>
+                  <p>
+                    Demonstrated stable transition between manual and AUTO mode,
+                    GPS waypoint execution, telemetry communication and
+                    post-flight log analysis for performance evaluation.
+                  </p>
+                </div>
+              </div>
+
+              <div class="project-phases">
+                <article>
+                  <span>Phase 01</span>
+                  <h3>Manual Flight Testing</h3>
+                  <p>
+                    Built and configured the fixed-wing airframe, then validated
+                    stability, propulsion, control surfaces and flight behavior
+                    through manual RC testing.
+                  </p>
+                </article>
+                <article>
+                  <span>Phase 02</span>
+                  <h3>Autonomous Integration</h3>
+                  <p>
+                    Integrated Pixhawk, ArduPilot, GPS and telemetry; calibrated
+                    sensors, tuned parameters and developed waypoint missions in
+                    Mission Planner.
+                  </p>
+                </article>
+              </div>
+
+              <div class="project-tags" aria-label="Technologies used">
+                <span>ArduPilot</span>
+                <span>Pixhawk</span>
+                <span>Mission Planner</span>
+                <span>MAVLink</span>
+                <span>GPS Navigation</span>
+                <span>Telemetry</span>
+                <span>PID Tuning</span>
+                <span>Flight Log Analysis</span>
+              </div>
+            </div>
+          </article>
+
+          <article
+            class="project-panel project-placeholder"
+            id="panel-aircraft"
+            role="tabpanel"
+            aria-labelledby="tab-aircraft"
+            data-project-panel="aircraft"
+            hidden
+          >
+            <p class="project-label">Aircraft Design</p>
+            <h2>Aircraft Structural and Systems Design</h2>
+            <p>
+              A future project detail panel for aircraft structure and systems
+              engineering work. This tab is ready for updates when you want to
+              add the full project description.
+            </p>
+          </article>
+
+          <article
+            class="project-panel project-placeholder"
+            id="panel-swissloop"
+            role="tabpanel"
+            aria-labelledby="tab-swissloop"
+            data-project-panel="swissloop"
+            hidden
+          >
+            <p class="project-label">Student Engineering Team</p>
+            <h2>Swissloop Tunneling</h2>
+            <p>
+              A future project detail panel for Swissloop Tunneling work. This
+              tab is ready for updates when you want to add the full project
+              story.
+            </p>
+          </article>
+        </div>
       </div>
     </section>
 

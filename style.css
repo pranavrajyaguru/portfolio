@@ -471,6 +471,64 @@ h1 {
   padding: 1rem;
 }
 
+.project-workspace {
+  display: grid;
+  gap: 1rem;
+}
+
+.project-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.project-tab {
+  align-items: center;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  cursor: pointer;
+  display: inline-flex;
+  font-weight: 800;
+  gap: 0.65rem;
+  min-height: 48px;
+  padding: 0 1rem;
+  transition: background 160ms ease, border-color 160ms ease, color 160ms ease, transform 160ms ease;
+}
+
+.project-tab span {
+  color: var(--accent);
+  font-size: 0.8rem;
+}
+
+.project-tab:hover,
+.project-tab.active {
+  background: var(--panel-strong);
+  border-color: rgba(100, 209, 201, 0.44);
+  color: var(--accent);
+  transform: translateY(-2px);
+}
+
+.project-panel {
+  animation: project-panel-in 180ms ease;
+}
+
+.project-panel[hidden] {
+  display: none;
+}
+
+@keyframes project-panel-in {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .project-feature img {
   aspect-ratio: 4 / 3;
   border-radius: 6px;
@@ -537,6 +595,20 @@ h1 {
   font-size: 0.82rem;
   font-weight: 800;
   padding: 0.35rem 0.7rem;
+}
+
+.project-placeholder {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: clamp(1.2rem, 3vw, 2rem);
+}
+
+.project-placeholder p:not(.project-label) {
+  color: var(--muted);
+  font-size: clamp(1.05rem, 1.7vw, 1.35rem);
+  line-height: 1.75;
+  max-width: 760px;
 }
 
 .contact-section {
