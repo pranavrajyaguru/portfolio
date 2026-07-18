@@ -408,30 +408,45 @@ h1 {
 
 .experience-logo-card {
   align-items: center;
-  background: #f5f1ea;
-  border: 1px solid rgba(0, 0, 0, 0.08);
-  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.035);
+  border: 1px solid var(--line);
+  border-radius: 8px;
   display: flex;
-  height: 76px;
+  height: 72px;
   justify-content: center;
   margin-top: 0.35rem;
   overflow: hidden;
-  padding: 0.75rem;
-  width: 160px;
+  padding: 0.85rem;
+  width: 158px;
 }
 
 .experience-logo-card img {
-  max-height: 54px;
+  filter: grayscale(1) contrast(1.04);
+  max-height: 48px;
+  mix-blend-mode: multiply;
   object-fit: contain;
+  opacity: 0.9;
   width: 100%;
 }
 
-.dark-logo-card {
-  background: #050505;
+.experience-logo-card .cybex-logo-img {
+  max-height: 34px;
 }
 
-.dark-logo-card img {
-  max-height: 68px;
+.experience-logo-card .audi-logo-img {
+  max-height: 42px;
+  width: 86%;
+}
+
+.experience-logo-card .porsche-logo-img {
+  max-height: 58px;
+  width: 68%;
+}
+
+[data-theme="dark"] .experience-logo-card img {
+  filter: grayscale(1) invert(1) contrast(0.9);
+  mix-blend-mode: screen;
+  opacity: 0.82;
 }
 
 .experience-item h3 {
