@@ -375,23 +375,28 @@ h1 {
 
 .experience-stack {
   display: grid;
-  gap: 1rem;
+  gap: 0;
 }
 
 .experience-item {
-  background: var(--panel);
-  border: 1px solid var(--line);
-  border-radius: 8px;
+  background: transparent;
+  border: 0;
+  border-top: 1px solid var(--line);
+  border-radius: 0;
   display: grid;
-  gap: clamp(1rem, 3vw, 2rem);
-  grid-template-columns: minmax(170px, 0.35fr) 1fr;
-  padding: clamp(1.2rem, 2.4vw, 1.75rem);
+  gap: clamp(1.4rem, 4vw, 3rem);
+  grid-template-columns: minmax(170px, 220px) minmax(0, 1fr);
+  padding: clamp(1.8rem, 3.4vw, 2.7rem) 0;
+}
+
+.experience-item:last-of-type {
+  border-bottom: 1px solid var(--line);
 }
 
 .experience-meta {
   align-content: start;
   display: grid;
-  gap: 0.45rem;
+  gap: 0.6rem;
 }
 
 .experience-meta span,
@@ -403,7 +408,8 @@ h1 {
 
 .experience-meta strong {
   color: var(--accent);
-  font-size: 1.08rem;
+  font-size: 0.9rem;
+  line-height: 1.25;
 }
 
 .experience-logo-card {
@@ -412,12 +418,12 @@ h1 {
   border: 0;
   border-radius: 0;
   display: flex;
-  height: 58px;
+  height: 48px;
   justify-content: flex-start;
-  margin-top: 0.35rem;
+  margin-top: 0.2rem;
   overflow: visible;
   padding: 0;
-  width: 142px;
+  width: 132px;
 }
 
 .experience-logo-card img {
@@ -431,17 +437,17 @@ h1 {
 
 .experience-logo-card .cybex-logo-img {
   max-height: none;
-  width: 138px;
+  width: 118px;
 }
 
 .experience-logo-card .audi-logo-img {
   max-height: none;
-  width: 112px;
+  width: 96px;
 }
 
 .experience-logo-card .porsche-logo-img {
   max-height: none;
-  width: 52px;
+  width: 40px;
 }
 
 [data-theme="dark"] .experience-logo-card img {
@@ -451,17 +457,17 @@ h1 {
 }
 
 .experience-item h3 {
-  font-size: clamp(1.25rem, 2vw, 1.7rem);
+  font-size: clamp(1.45rem, 2.6vw, 2.25rem);
   line-height: 1.22;
-  margin-bottom: 0.85rem;
+  margin-bottom: 1rem;
 }
 
 .experience-item ul {
   color: var(--muted);
   display: grid;
-  font-size: clamp(1rem, 1.35vw, 1.12rem);
-  gap: 0.55rem;
-  line-height: 1.55;
+  font-size: clamp(1rem, 1.6vw, 1.2rem);
+  gap: 0.75rem;
+  line-height: 1.65;
   list-style: none;
 }
 
