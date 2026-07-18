@@ -406,6 +406,34 @@ h1 {
   font-size: 1.08rem;
 }
 
+.experience-logo-card {
+  align-items: center;
+  background: #f5f1ea;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 10px;
+  display: flex;
+  height: 76px;
+  justify-content: center;
+  margin-top: 0.35rem;
+  overflow: hidden;
+  padding: 0.75rem;
+  width: 160px;
+}
+
+.experience-logo-card img {
+  max-height: 54px;
+  object-fit: contain;
+  width: 100%;
+}
+
+.dark-logo-card {
+  background: #050505;
+}
+
+.dark-logo-card img {
+  max-height: 68px;
+}
+
 .experience-item h3 {
   font-size: clamp(1.25rem, 2vw, 1.7rem);
   line-height: 1.22;
