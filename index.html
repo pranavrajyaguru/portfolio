@@ -185,9 +185,9 @@
       <div class="content-shell">
         <p class="section-kicker">Projects</p>
         <div class="project-workspace">
-          <div class="project-tabs" role="tablist" aria-label="Project details">
+          <div class="project-list" role="tablist" aria-label="Project details">
             <button
-              class="project-tab"
+              class="project-card-button"
               id="tab-uav"
               type="button"
               role="tab"
@@ -195,11 +195,19 @@
               aria-controls="panel-uav"
               data-project-tab="uav"
             >
-              <span>01</span>
-              Fixed-Wing UAV
+              <img src="assets/project-cover.jpg" alt="">
+              <span class="project-card-content">
+                <span class="project-card-number">01</span>
+                <strong>Fixed-Wing UAV</strong>
+                <span>
+                  Autonomous waypoint navigation with ArduPilot, Pixhawk,
+                  telemetry and GPS mission planning.
+                </span>
+                <span class="project-card-action">Open project</span>
+              </span>
             </button>
             <button
-              class="project-tab"
+              class="project-card-button"
               id="tab-aircraft"
               type="button"
               role="tab"
@@ -207,11 +215,16 @@
               aria-controls="panel-aircraft"
               data-project-tab="aircraft"
             >
-              <span>02</span>
-              Aircraft Systems
+              <span class="project-card-media" aria-hidden="true">02</span>
+              <span class="project-card-content">
+                <span class="project-card-number">02</span>
+                <strong>Aircraft Systems</strong>
+                <span>Aircraft structure and systems engineering project notes.</span>
+                <span class="project-card-action">Open project</span>
+              </span>
             </button>
             <button
-              class="project-tab"
+              class="project-card-button"
               id="tab-swissloop"
               type="button"
               role="tab"
@@ -219,14 +232,19 @@
               aria-controls="panel-swissloop"
               data-project-tab="swissloop"
             >
-              <span>03</span>
-              Swissloop Tunneling
+              <span class="project-card-media" aria-hidden="true">03</span>
+              <span class="project-card-content">
+                <span class="project-card-number">03</span>
+                <strong>Swissloop Tunneling</strong>
+                <span>Student engineering team work in structural design.</span>
+                <span class="project-card-action">Open project</span>
+              </span>
             </button>
           </div>
 
           <div class="project-empty" data-project-empty>
             <p class="project-label">Select a project</p>
-            <h2>Choose a project tab to view the full update.</h2>
+            <h2>Click a project card to view the full update.</h2>
             <p>
               Each project opens inside this section with its objective,
               development phases, tools, skills and outcome.

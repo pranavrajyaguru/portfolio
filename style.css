@@ -476,37 +476,75 @@ h1 {
   gap: 1rem;
 }
 
-.project-tabs {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.75rem;
+.project-list {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
-.project-tab {
-  align-items: center;
+.project-card-button {
+  appearance: none;
   background: var(--panel);
   border: 1px solid var(--line);
-  border-radius: 999px;
+  border-radius: 8px;
+  color: var(--text);
   cursor: pointer;
-  display: inline-flex;
-  font-weight: 800;
-  gap: 0.65rem;
-  min-height: 48px;
-  padding: 0 1rem;
+  display: grid;
+  gap: 0.9rem;
+  overflow: hidden;
+  padding: 0;
+  text-align: left;
   transition: background 160ms ease, border-color 160ms ease, color 160ms ease, transform 160ms ease;
 }
 
-.project-tab span {
-  color: var(--accent);
-  font-size: 0.8rem;
-}
-
-.project-tab:hover,
-.project-tab.active {
+.project-card-button:hover,
+.project-card-button.active {
   background: var(--panel-strong);
   border-color: rgba(100, 209, 201, 0.44);
+  transform: translateY(-3px);
+}
+
+.project-card-button img,
+.project-card-media {
+  aspect-ratio: 16 / 9;
+  background: rgba(100, 209, 201, 0.1);
+  object-fit: cover;
+  width: 100%;
+}
+
+.project-card-media {
+  align-items: center;
   color: var(--accent);
-  transform: translateY(-2px);
+  display: flex;
+  font-family: var(--font-display);
+  font-size: 3rem;
+  font-weight: 700;
+  justify-content: center;
+}
+
+.project-card-content {
+  display: grid;
+  gap: 0.55rem;
+  padding: 0 1rem 1rem;
+}
+
+.project-card-number,
+.project-card-action {
+  color: var(--accent);
+  font-size: 0.76rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.project-card-content strong {
+  font-size: clamp(1.1rem, 1.8vw, 1.35rem);
+  line-height: 1.2;
+}
+
+.project-card-content span:not(.project-card-number):not(.project-card-action) {
+  color: var(--muted);
+  line-height: 1.45;
 }
 
 .project-panel {
@@ -673,6 +711,10 @@ h1 {
   .content-shell,
   .experience-item,
   .project-feature {
+    grid-template-columns: 1fr;
+  }
+
+  .project-list {
     grid-template-columns: 1fr;
   }
 
