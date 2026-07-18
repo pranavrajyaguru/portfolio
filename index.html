@@ -187,11 +187,11 @@
         <div class="project-workspace">
           <div class="project-tabs" role="tablist" aria-label="Project details">
             <button
-              class="project-tab active"
+              class="project-tab"
               id="tab-uav"
               type="button"
               role="tab"
-              aria-selected="true"
+              aria-selected="false"
               aria-controls="panel-uav"
               data-project-tab="uav"
             >
@@ -224,12 +224,22 @@
             </button>
           </div>
 
+          <div class="project-empty" data-project-empty>
+            <p class="project-label">Select a project</p>
+            <h2>Choose a project tab to view the full update.</h2>
+            <p>
+              Each project opens inside this section with its objective,
+              development phases, tools, skills and outcome.
+            </p>
+          </div>
+
           <article
-            class="project-feature project-panel active"
+            class="project-feature project-panel"
             id="panel-uav"
             role="tabpanel"
             aria-labelledby="tab-uav"
             data-project-panel="uav"
+            hidden
           >
             <img src="assets/project-cover.jpg" alt="Fixed wing UAV project on a field">
             <div class="project-copy">

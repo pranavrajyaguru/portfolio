@@ -5,6 +5,7 @@ const currentYear = document.getElementById("currentYear");
 const root = document.documentElement;
 const projectTabs = document.querySelectorAll("[data-project-tab]");
 const projectPanels = document.querySelectorAll("[data-project-panel]");
+const projectEmpty = document.querySelector("[data-project-empty]");
 
 const savedTheme = localStorage.getItem("portfolio-theme");
 if (savedTheme) {
@@ -30,6 +31,8 @@ themeToggle.addEventListener("click", () => {
 projectTabs.forEach((tab) => {
   tab.addEventListener("click", () => {
     const selectedProject = tab.dataset.projectTab;
+
+    projectEmpty.hidden = true;
 
     projectTabs.forEach((item) => {
       const isSelected = item === tab;

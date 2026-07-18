@@ -517,6 +517,20 @@ h1 {
   display: none;
 }
 
+.project-empty {
+  background: var(--panel);
+  border: 1px dashed rgba(100, 209, 201, 0.35);
+  border-radius: 8px;
+  padding: clamp(1.2rem, 3vw, 2rem);
+}
+
+.project-empty p:not(.project-label) {
+  color: var(--muted);
+  font-size: clamp(1.05rem, 1.7vw, 1.25rem);
+  line-height: 1.7;
+  max-width: 680px;
+}
+
 @keyframes project-panel-in {
   from {
     opacity: 0;
