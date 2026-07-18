@@ -417,7 +417,7 @@ h1 {
   margin-top: 0.35rem;
   overflow: visible;
   padding: 0;
-  width: 150px;
+  width: 142px;
 }
 
 .experience-logo-card img {
@@ -430,17 +430,21 @@ h1 {
 }
 
 .experience-logo-card .cybex-logo-img {
-  max-height: 34px;
+  clip-path: inset(24% 6% 24% 6%);
+  max-height: none;
+  width: 128px;
 }
 
 .experience-logo-card .audi-logo-img {
-  max-height: 42px;
-  width: 86%;
+  clip-path: inset(18% 0 18% 0);
+  max-height: none;
+  width: 118px;
 }
 
 .experience-logo-card .porsche-logo-img {
-  max-height: 58px;
-  width: 68%;
+  clip-path: inset(18% 30% 18% 30%);
+  max-height: none;
+  width: 128px;
 }
 
 [data-theme="dark"] .experience-logo-card img {
