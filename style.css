@@ -408,21 +408,21 @@ h1 {
 
 .experience-logo-card {
   align-items: center;
-  background: rgba(255, 255, 255, 0.035);
-  border: 1px solid var(--line);
-  border-radius: 8px;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
   display: flex;
-  height: 72px;
-  justify-content: center;
+  height: 58px;
+  justify-content: flex-start;
   margin-top: 0.35rem;
-  overflow: hidden;
-  padding: 0.85rem;
-  width: 158px;
+  overflow: visible;
+  padding: 0;
+  width: 150px;
 }
 
 .experience-logo-card img {
   filter: grayscale(1) contrast(1.04);
-  max-height: 48px;
+  max-height: 42px;
   mix-blend-mode: multiply;
   object-fit: contain;
   opacity: 0.9;
