@@ -549,7 +549,8 @@ h1 {
   border-color: rgba(100, 209, 201, 0.44);
 }
 
-.project-accordion summary {
+.project-accordion summary,
+.project-card-link {
   align-items: stretch;
   cursor: pointer;
   display: grid;
@@ -564,6 +565,7 @@ h1 {
 }
 
 .project-accordion summary img,
+.project-card-link img,
 .project-card-media {
   aspect-ratio: 16 / 9;
   background: rgba(100, 209, 201, 0.1);
@@ -609,6 +611,14 @@ h1 {
   font-weight: 800;
   letter-spacing: 0.1em;
   text-transform: uppercase;
+}
+
+.project-card-link {
+  transition: transform 180ms ease;
+}
+
+.project-card-link:hover {
+  transform: translateY(-2px);
 }
 
 .project-accordion[open] .project-card-action {
@@ -766,7 +776,8 @@ h1 {
     grid-template-columns: 1fr;
   }
 
-  .project-accordion summary {
+  .project-accordion summary,
+  .project-card-link {
     grid-template-columns: 1fr;
   }
 

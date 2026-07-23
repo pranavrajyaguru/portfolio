@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Autonomous fixed-wing UAV case study by Pranav Rajyaguru.">
+  <title>Autonomous Fixed-Wing UAV | Pranav Rajyaguru</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;600;700;800&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="project.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav-shell project-nav" aria-label="Project navigation">
+      <a class="brand" href="index.html">Pranav Rajyaguru</a>
+      <div class="project-nav-actions">
+        <a href="index.html#projects">← All projects</a>
+        <button class="chip-button theme-toggle" id="themeToggle" type="button" aria-label="Toggle theme">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M21 13.3A8 8 0 1 1 10.7 3a6.6 6.6 0 0 0 10.3 10.3Z"></path>
+          </svg>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="project-hero">
+      <div class="project-page-shell">
+        <p class="project-label">Autonomous Flight Systems · Case Study 01</p>
+        <h1>Autonomous Fixed-Wing UAV using ArduPilot</h1>
+        <p class="project-intro">
+          A GPS-guided fixed-wing aircraft built around Pixhawk and ArduPilot,
+          with telemetry, waypoint missions and manual control for critical flight phases.
+        </p>
+        <img class="project-hero-image" src="assets/project-cover.jpg" alt="Fixed-wing UAV on a field">
+      </div>
+    </section>
+
+    <section class="project-page-section">
+      <div class="project-page-shell project-facts">
+        <div><span>Role</span><strong>Design, integration & flight testing</strong></div>
+        <div><span>Platform</span><strong>Fixed-wing RC aircraft</strong></div>
+        <div><span>Flight stack</span><strong>Pixhawk + ArduPilot</strong></div>
+        <div><span>Focus</span><strong>Autonomous waypoint flight</strong></div>
+      </div>
+    </section>
+
+    <section class="project-page-section">
+      <div class="project-page-shell story-grid">
+        <p class="section-kicker">The project</p>
+        <div>
+          <h2>From a manually flown airframe to a repeatable autonomous mission.</h2>
+          <p>Designed and implemented a fixed-wing UAV by integrating the ArduPilot open-source autopilot ecosystem with a Pixhawk flight controller. The goal was reliable GPS-based waypoint flight while retaining a safe manual override for takeoff, approach and landing.</p>
+
+          <div class="project-page-phases">
+            <article><span>01</span><h3>Airframe validation</h3><p>Verified propulsion, center of gravity, control-surface direction and stable manual flight before introducing autonomous control.</p></article>
+            <article><span>02</span><h3>System integration</h3><p>Installed Pixhawk, GPS and telemetry, calibrated sensors and configured flight modes and failsafe behavior.</p></article>
+            <article><span>03</span><h3>Mission planning</h3><p>Created GPS waypoint missions in Mission Planner and tuned the aircraft for dependable navigation and altitude control.</p></article>
+            <article><span>04</span><h3>Flight analysis</h3><p>Reviewed telemetry and flight logs to evaluate mission tracking, mode transitions and overall performance.</p></article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="project-page-section" id="gallery">
+      <div class="project-page-shell">
+        <div class="gallery-heading">
+          <div>
+            <p class="section-kicker">Gallery</p>
+            <h2>Build and flight photos</h2>
+          </div>
+          <label class="pill-button gallery-upload">
+            <input id="photoUpload" type="file" accept="image/*" multiple>
+            + Add photos
+          </label>
+        </div>
+        <p class="upload-note" id="uploadNote">Choose photos from your computer to preview them here. To publish them permanently, copy the files into the assets folder and add them to this gallery in the HTML.</p>
+        <div class="project-gallery" id="projectGallery">
+          <figure class="gallery-wide">
+            <img src="assets/project-cover.jpg" alt="Fixed-wing UAV ready for flight">
+            <figcaption>Flight-ready fixed-wing UAV</figcaption>
+          </figure>
+          <div class="gallery-placeholder"><span>02</span><p>Add a build photo</p></div>
+          <div class="gallery-placeholder"><span>03</span><p>Add an electronics photo</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="project-page-section">
+      <div class="project-page-shell story-grid">
+        <p class="section-kicker">Outcome</p>
+        <div>
+          <h2>A stable transition between pilot control and AUTO mode.</h2>
+          <p>The project demonstrated waypoint execution, live telemetry communication, controlled flight-mode transitions and post-flight log analysis—forming a practical base for further autonomous aircraft experiments.</p>
+          <div class="project-tags" aria-label="Technologies used">
+            <span>ArduPilot</span><span>Pixhawk</span><span>Mission Planner</span><span>MAVLink</span>
+            <span>GPS Navigation</span><span>Telemetry</span><span>PID Tuning</span><span>Flight Logs</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer"><p>&copy; <span id="currentYear"></span> Pranav Rajyaguru</p></footer>
+  <script src="project.js"></script>
+</body>
+</html>
