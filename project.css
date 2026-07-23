@@ -118,22 +118,6 @@
   justify-content: space-between;
 }
 
-.gallery-upload {
-  cursor: pointer;
-  min-height: 54px;
-}
-
-.gallery-upload input {
-  display: none;
-}
-
-.upload-note {
-  color: var(--muted);
-  line-height: 1.6;
-  margin: 0 0 2rem;
-  max-width: 800px;
-}
-
 .project-gallery {
   display: grid;
   gap: 1rem;
@@ -202,12 +186,4 @@
     grid-column: auto;
   }
 
-  .gallery-heading {
-    align-items: flex-start;
-    flex-direction: column;
-  }
-
-  .gallery-upload {
-    margin-bottom: 1.5rem;
-  }
 }
