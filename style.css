@@ -543,6 +543,63 @@ h1 {
   gap: 1rem;
 }
 
+.project-featured {
+  border-color: var(--accent);
+  border-top: 4px solid var(--accent);
+}
+
+.project-featured .project-card-link {
+  padding: clamp(1rem, 3vw, 2rem);
+}
+
+.project-summary-copy .project-status {
+  justify-self: start;
+  background: var(--panel-strong);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--text);
+  font-size: 0.8rem;
+  font-weight: 800;
+  padding: 0.25rem 0.7rem;
+}
+
+.analysis-placeholder {
+  background: var(--panel-strong);
+  border: 1px dashed var(--muted);
+  color: var(--text);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.project-card-media.analysis-placeholder {
+  font-size: clamp(1.3rem, 2.5vw, 1.8rem);
+  height: 100%;
+  min-height: 180px;
+  aspect-ratio: auto;
+}
+
+.analysis-placeholder span {
+  color: var(--muted);
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.project-card-link img.aircraft-photo {
+  object-position: center top;
+}
+
+.project-card-link:focus-visible,
+.case-study-link:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: -3px;
+}
+
 .project-accordion {
   background: var(--panel);
   border: 1px solid var(--line);
@@ -606,7 +663,7 @@ h1 {
   line-height: 1;
 }
 
-.project-summary-copy span:not(.project-card-number):not(.project-card-action) {
+.project-summary-copy span:not(.project-card-number):not(.project-card-action):not(.project-status) {
   color: var(--muted);
   font-size: clamp(1rem, 1.4vw, 1.15rem);
   line-height: 1.55;
