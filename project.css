@@ -168,9 +168,92 @@
 
 .project-gallery img {
   aspect-ratio: 4 / 3;
-  height: 100%;
+  height: auto;
+  max-height: 360px;
   object-fit: cover;
   width: 100%;
+}
+
+.piper-hero-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.3fr) minmax(0, 0.7fr);
+  align-items: center;
+  gap: clamp(2rem, 5vw, 4rem);
+}
+
+.piper-hero-grid h1 {
+  font-size: clamp(2.4rem, 4.5vw, 4.6rem);
+  line-height: 1.06;
+}
+
+.piper-hero-photo {
+  width: 100%;
+  height: 380px;
+  object-fit: contain;
+  background: var(--panel);
+  border-radius: 8px;
+}
+
+.piper-photo-grid,
+.piper-video-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.piper-video-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.piper-photo-grid figure,
+.piper-video-grid figure {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  overflow: hidden;
+  min-width: 0;
+}
+
+.piper-photo-grid img,
+.piper-video-grid video {
+  display: block;
+  width: 100%;
+  height: 280px;
+  object-fit: contain;
+  background: var(--panel-strong);
+}
+
+.piper-photo-grid a {
+  display: block;
+}
+
+.piper-photo-grid a:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: -3px;
+}
+
+.piper-photo-grid figcaption,
+.piper-video-grid figcaption {
+  padding: 1rem;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.piper-photo-grid figcaption span {
+  display: block;
+  color: var(--muted);
+  margin-top: 0.4rem;
+}
+
+.gallery-intro {
+  color: var(--muted);
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.clips-heading {
+  font-size: 1.4rem;
+  margin: 2rem 0 1rem;
 }
 
 .gallery-wide {
@@ -203,6 +286,15 @@
 }
 
 @media (max-width: 760px) {
+  .piper-hero-grid,
+  .piper-photo-grid,
+  .piper-video-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .piper-hero-photo {
+    height: 300px;
+  }
   .project-nav {
     flex-wrap: wrap;
     gap: 0.75rem;

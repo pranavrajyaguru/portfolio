@@ -8,8 +8,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;600;700;800&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=20260913-projects">
-  <link rel="stylesheet" href="project.css?v=20260913-projects">
+  <link rel="stylesheet" href="style.css?v=20260913-gallery">
+  <link rel="stylesheet" href="project.css?v=20260913-gallery">
 </head>
 <body>
   <header class="site-header">
@@ -27,14 +27,33 @@
   </header>
 
   <main>
-    <section class="project-hero"><div class="project-page-shell">
-      <p class="project-label">Aircraft integration ? In progress</p>
-      <h1>Piper RC Aircraft ? ArduPilot Integration</h1>
-      <p class="project-intro">Integrating ArduPilot and a Pixhawk controller into an existing, flight-proven RC aircraft design.</p>
-      <figure class="aircraft-figure"><img class="project-hero-image aircraft-photo" src="assets/project-cover.jpg" alt="RC aircraft on a grass field with a radio transmitter in the foreground"><figcaption>Aircraft media from the portfolio archive.</figcaption></figure>
+    <section class="project-hero"><div class="project-page-shell piper-hero-grid">
+      <div>
+        <p class="project-label">Aircraft integration &middot; In progress</p>
+        <h1>Piper RC Aircraft &mdash; ArduPilot Integration</h1>
+        <p class="project-intro">Integrating ArduPilot and a Pixhawk controller into an existing, flight-proven RC aircraft design.</p>
+        <a class="case-study-link" href="#gallery">View build photos &amp; clips &#8595;</a>
+      </div>
+      <figure class="aircraft-figure"><img class="piper-hero-photo" src="assets/piper/piper-9751.jpg" width="1200" height="1600" alt="Pixhawk controller and GPS module inside the open Piper fuselage"><figcaption>Pixhawk installation inside the Piper fuselage.</figcaption></figure>
     </div></section>
-<section class="project-page-section"><div class="project-page-shell story-grid"><p class="section-kicker">My contribution</p><div><h2>Integrating the flight system into a proven airframe.</h2><p>The Piper is an existing, flight-proven RC aircraft design. My contribution is the ArduPilot and Pixhawk integration, together with the design of mounts for the controller, antenna and battery. This work is in progress; the airframe?s flight history does not establish that the new autopilot installation has been validated.</p></div></div></section>
-<section class="project-page-section"><div class="project-page-shell story-grid"><p class="section-kicker">Engineering focus</p><div><h2>Making the installation fit and balance.</h2><div class="project-page-phases"><article><span>01</span><h3>ArduPilot &amp; Pixhawk</h3><p>My work centres on integrating the flight controller and ArduPilot into the existing aircraft systems.</p></article><article><span>02</span><h3>Controller, antenna &amp; battery mounts</h3><p>I am designing mounts around the available installation locations and component access.</p></article><article><span>03</span><h3>Internal space</h3><p>The integration must accommodate the components, wiring and access needs within the existing fuselage.</p></article><article><span>04</span><h3>Weight distribution &amp; centre of gravity</h3><p>Component placement and mount design must account for added mass and the aircraft?s centre of gravity.</p></article></div></div></div></section>
+    <section class="project-page-section" id="gallery">
+      <div class="project-page-shell">
+        <div class="gallery-heading"><div><p class="section-kicker">Build gallery</p><h2>The aircraft and its integration</h2></div></div>
+        <p class="gallery-intro">Workbench photos and clips from the integration in progress. Select a photo to view it in full.</p>
+        <div class="piper-photo-grid">
+          <figure><a href="assets/piper/piper-9458.jpg" target="_blank" rel="noopener"><img src="assets/piper/piper-9458.jpg" width="1200" height="1600" alt="Front view of the Piper on a workbench" loading="lazy"></a><figcaption><strong>The existing airframe</strong><span>Piper airframe, propeller and landing gear.</span></figcaption></figure>
+          <figure><a href="assets/piper/piper-9487.jpg" target="_blank" rel="noopener"><img src="assets/piper/piper-9487.jpg" width="1200" height="1600" alt="Piper beside a Pixhawk controller, receiver, battery and laptop" loading="lazy"></a><figcaption><strong>Bench setup</strong><span>Aircraft and electronics alongside the configuration laptop.</span></figcaption></figure>
+          <figure><a href="assets/piper/piper-9751.jpg" target="_blank" rel="noopener"><img src="assets/piper/piper-9751.jpg" width="1200" height="1600" alt="Pixhawk mounted in the open fuselage with wiring and a GPS module" loading="lazy"></a><figcaption><strong>Internal installation</strong><span>Controller placement, wiring and available fuselage space.</span></figcaption></figure>
+        </div>
+        <h3 class="clips-heading">Integration clips</h3>
+        <div class="piper-video-grid">
+          <figure><video controls playsinline preload="none" poster="assets/piper/piper-9653-poster.jpg" aria-label="Piper integration clip 1"><source src="assets/piper/piper-9653.mp4" type="video/mp4"><a href="assets/piper/piper-9653.mp4">Download integration clip 1</a></video><figcaption>Integration in progress &middot; Clip 1</figcaption></figure>
+          <figure><video controls playsinline preload="none" poster="assets/piper/piper-9748-poster.jpg" aria-label="Piper integration clip 2"><source src="assets/piper/piper-9748.mp4" type="video/mp4"><a href="assets/piper/piper-9748.mp4">Download integration clip 2</a></video><figcaption>Integration in progress &middot; Clip 2</figcaption></figure>
+        </div>
+      </div>
+    </section>
+<section class="project-page-section"><div class="project-page-shell story-grid"><p class="section-kicker">My contribution</p><div><h2>Integrating the flight system into a proven airframe.</h2><p>The Piper is an existing, flight-proven RC aircraft design. My contribution is the ArduPilot and Pixhawk integration, together with the design of mounts for the controller, antenna and battery. This work is in progress; the airframe's flight history does not establish that the new autopilot installation has been validated.</p></div></div></section>
+<section class="project-page-section"><div class="project-page-shell story-grid"><p class="section-kicker">Engineering focus</p><div><h2>Making the installation fit and balance.</h2><div class="project-page-phases"><article><span>01</span><h3>ArduPilot &amp; Pixhawk</h3><p>My work centres on integrating the flight controller and ArduPilot into the existing aircraft systems.</p></article><article><span>02</span><h3>Controller, antenna &amp; battery mounts</h3><p>I am designing mounts around the available installation locations and component access.</p></article><article><span>03</span><h3>Internal space</h3><p>The integration must accommodate the components, wiring and access needs within the existing fuselage.</p></article><article><span>04</span><h3>Weight distribution &amp; centre of gravity</h3><p>Component placement and mount design must account for added mass and the aircraft's centre of gravity.</p></article></div></div></div></section>
 <section class="project-page-section"><div class="project-page-shell story-grid"><p class="section-kicker">Connected project</p><div><h2>From aircraft integration to flight-log analysis.</h2><p>This aircraft is the intended source of logs for my planned Flight Data Analysis &amp; Anomaly Detection software. The software project will focus on understanding recorded behaviour and highlighting events for review.</p><a class="case-study-link" href="project-flight-data.html">Explore Flight Data Analysis &amp; Anomaly Detection &#8594;</a></div></div></section>
   </main>
   <footer class="footer"><p>&copy; <span id="currentYear"></span> Pranav Rajyaguru</p></footer>
