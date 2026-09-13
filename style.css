@@ -594,6 +594,14 @@ h1 {
   object-position: center top;
 }
 
+.project-card-link img.piper-main-photo {
+  height: 240px;
+  aspect-ratio: auto;
+  object-fit: contain;
+  object-position: center;
+  background: var(--panel-strong);
+}
+
 .project-card-link:focus-visible,
 .case-study-link:focus-visible {
   outline: 3px solid var(--accent);
