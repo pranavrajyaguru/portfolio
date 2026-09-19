@@ -14,7 +14,7 @@
     href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;600;700;800&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap"
     rel="stylesheet"
   >
-  <link rel="stylesheet" href="style.css?v=20260920-compact-hero-v2">
+  <link rel="stylesheet" href="style.css?v=20260920-compact-projects">
 </head>
 <body>
   <header class="site-header">
@@ -186,74 +186,35 @@
     </section>
 
     <section class="section split-section" id="projects">
-      <div class="content-shell">
+      <div class="projects-shell">
         <p class="section-kicker">Projects</p>
-        <div class="project-stack">
-          <article class="project-accordion project-featured">
-            <a class="project-card-link" href="project-flight-data.html" target="_blank" rel="noopener">
-              <span class="project-card-media analysis-placeholder">Flight log visualisation<span>Image placeholder &mdash; Planned software</span></span>
-              <span class="project-summary-copy">
-                <span class="project-card-number">01 &mdash; Featured project</span>
-                <span class="project-status">Planned</span>
-                <strong>Flight Data Analysis &amp; Anomaly Detection</strong>
-                <span>Planned software to analyse logs from the Piper, visualise flight signals and identify unusual events for closer review.</span>
-                <span class="project-card-action">Explore the project plan in a new tab &#8599;</span>
-              </span>
+        <h2>Things I've built</h2>
+        <p class="projects-intro">
+          Aircraft systems, autonomy experiments and flight-data tools.
+        </p>
+
+        <div class="compact-project-grid">
+          <article class="compact-project-card">
+            <h3>Piper RC Aircraft - ArduPilot Integration</h3>
+            <p>
+              Integrating Pixhawk, GPS and ArduPilot into a flight-proven Piper
+              airframe while managing internal space, wiring and centre of gravity.
+            </p>
+            <a href="project-autonomous-uav.html" target="_blank" rel="noopener">
+              Visit the project <span aria-hidden="true">&#8599;</span>
             </a>
           </article>
 
-          <article class="project-accordion">
-            <a class="project-card-link" href="project-autonomous-uav.html" target="_blank" rel="noopener">
-              <img class="aircraft-photo piper-main-photo" src="assets/piper/piper-main.jpg" alt="Piper aircraft with the Pixhawk controller, wiring and GPS module visible in the open fuselage" loading="lazy">
-              <span class="project-summary-copy">
-                <span class="project-card-number">02 &mdash; Aircraft integration</span>
-                <span class="project-status">In progress</span>
-                <strong>Piper RC Aircraft &mdash; ArduPilot Integration</strong>
-                <span>Integrating ArduPilot and Pixhawk into an existing, flight-proven Piper design, with custom mounts and a focus on internal space, weight distribution and centre of gravity.</span>
-                <span class="project-card-action">Open case study in a new tab &#8599;</span>
-              </span>
+          <article class="compact-project-card">
+            <h3>Flight Data Analysis &amp; Anomaly Detection</h3>
+            <p>
+              Planned software for visualising Piper flight logs, comparing
+              signals and flagging unusual events for closer engineering review.
+            </p>
+            <a href="project-flight-data.html" target="_blank" rel="noopener">
+              Visit the project <span aria-hidden="true">&#8599;</span>
             </a>
           </article>
-
-          <details class="project-accordion">
-            <summary>
-              <span class="project-card-media" aria-hidden="true">03</span>
-              <span class="project-summary-copy">
-                <span class="project-card-number">03</span>
-                <strong>Aircraft Structural and Systems Design</strong>
-                <span>Click to add or view future project details.</span>
-                <span class="project-card-action">Open project</span>
-              </span>
-            </summary>
-            <div class="project-placeholder">
-              <p class="project-label">Aircraft Design</p>
-              <h2>Aircraft Structural and Systems Design</h2>
-              <p>
-                This project card is ready for the full aircraft structure and
-                systems engineering description.
-              </p>
-            </div>
-          </details>
-
-          <details class="project-accordion">
-            <summary>
-              <span class="project-card-media" aria-hidden="true">04</span>
-              <span class="project-summary-copy">
-                <span class="project-card-number">04</span>
-                <strong>Swissloop Tunneling</strong>
-                <span>Click to add or view future project details.</span>
-                <span class="project-card-action">Open project</span>
-              </span>
-            </summary>
-            <div class="project-placeholder">
-              <p class="project-label">Student Engineering Team</p>
-              <h2>Swissloop Tunneling</h2>
-              <p>
-                This project card is ready for the full Swissloop Tunneling
-                project story.
-              </p>
-            </div>
-          </details>
         </div>
       </div>
     </section>
@@ -277,6 +238,6 @@
     <p>&copy; <span id="currentYear"></span> Pranav Rajyaguru</p>
   </footer>
 
-  <script src="script.js?v=20260920-compact-hero-v2"></script>
+  <script src="script.js?v=20260920-compact-projects"></script>
 </body>
 </html>
