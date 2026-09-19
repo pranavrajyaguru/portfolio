@@ -163,20 +163,21 @@ button {
 }
 
 .section {
-  padding: clamp(5rem, 8vw, 9rem) 2rem;
+  padding: clamp(4rem, 6vw, 6.5rem) 2rem;
 }
 
 .hero {
-  min-height: calc(100vh - 86px);
+  padding-bottom: clamp(4rem, 6vw, 6rem);
+  padding-top: clamp(3.5rem, 6vw, 5.5rem);
 }
 
 .hero-shell {
   align-items: center;
   display: grid;
-  gap: clamp(3.5rem, 7vw, 6rem);
-  grid-template-columns: minmax(280px, 0.78fr) minmax(320px, 1.22fr);
+  gap: clamp(2.5rem, 5vw, 4.5rem);
+  grid-template-columns: minmax(260px, 0.72fr) minmax(320px, 1fr);
   margin: 0 auto;
-  max-width: 1510px;
+  max-width: 1180px;
 }
 
 .portrait-wrap {
@@ -185,10 +186,10 @@ button {
   border-radius: 50%;
   box-shadow: 0 24px 70px var(--shadow);
   margin-inline: auto;
-  max-width: 510px;
+  max-width: 430px;
   padding: 15px;
   position: relative;
-  width: min(100%, 34vw);
+  width: min(100%, 28vw);
 }
 
 .portrait-wrap::after {
