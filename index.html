@@ -14,7 +14,7 @@
     href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;600;700;800&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap"
     rel="stylesheet"
   >
-  <link rel="stylesheet" href="style.css?v=20260920-compact-projects">
+  <link rel="stylesheet" href="style.css?v=20260920-projects-before-experience">
 </head>
 <body>
   <header class="site-header">
@@ -29,8 +29,8 @@
 
       <div class="nav-actions" id="navLinks">
         <a class="active" href="#work">Work</a>
-        <a href="#experience">Experience</a>
         <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
         <a href="#contact">Contact</a>
         <button class="chip-button" type="button" aria-label="Language preference">DE</button>
         <button class="chip-button theme-toggle" id="themeToggle" type="button" aria-label="Toggle theme">
@@ -100,6 +100,40 @@
               GitHub
             </a>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section split-section" id="projects">
+      <div class="projects-shell">
+        <p class="section-kicker">Projects</p>
+        <h2>Things I've built</h2>
+        <p class="projects-intro">
+          Aircraft systems, autonomy experiments and flight-data tools.
+        </p>
+
+        <div class="compact-project-grid">
+          <article class="compact-project-card">
+            <h3>Piper RC Aircraft - ArduPilot Integration</h3>
+            <p>
+              Integrating Pixhawk, GPS and ArduPilot into a flight-proven Piper
+              airframe while managing internal space, wiring and centre of gravity.
+            </p>
+            <a href="project-autonomous-uav.html" target="_blank" rel="noopener">
+              Visit the project <span aria-hidden="true">&#8599;</span>
+            </a>
+          </article>
+
+          <article class="compact-project-card">
+            <h3>Flight Data Analysis &amp; Anomaly Detection</h3>
+            <p>
+              Planned software for visualising Piper flight logs, comparing
+              signals and flagging unusual events for closer engineering review.
+            </p>
+            <a href="project-flight-data.html" target="_blank" rel="noopener">
+              Visit the project <span aria-hidden="true">&#8599;</span>
+            </a>
+          </article>
         </div>
       </div>
     </section>
@@ -185,40 +219,6 @@
       </div>
     </section>
 
-    <section class="section split-section" id="projects">
-      <div class="projects-shell">
-        <p class="section-kicker">Projects</p>
-        <h2>Things I've built</h2>
-        <p class="projects-intro">
-          Aircraft systems, autonomy experiments and flight-data tools.
-        </p>
-
-        <div class="compact-project-grid">
-          <article class="compact-project-card">
-            <h3>Piper RC Aircraft - ArduPilot Integration</h3>
-            <p>
-              Integrating Pixhawk, GPS and ArduPilot into a flight-proven Piper
-              airframe while managing internal space, wiring and centre of gravity.
-            </p>
-            <a href="project-autonomous-uav.html" target="_blank" rel="noopener">
-              Visit the project <span aria-hidden="true">&#8599;</span>
-            </a>
-          </article>
-
-          <article class="compact-project-card">
-            <h3>Flight Data Analysis &amp; Anomaly Detection</h3>
-            <p>
-              Planned software for visualising Piper flight logs, comparing
-              signals and flagging unusual events for closer engineering review.
-            </p>
-            <a href="project-flight-data.html" target="_blank" rel="noopener">
-              Visit the project <span aria-hidden="true">&#8599;</span>
-            </a>
-          </article>
-        </div>
-      </div>
-    </section>
-
     <section class="section contact-section" id="contact">
       <div class="contact-shell">
         <p class="section-kicker">Contact</p>
@@ -238,6 +238,6 @@
     <p>&copy; <span id="currentYear"></span> Pranav Rajyaguru</p>
   </footer>
 
-  <script src="script.js?v=20260920-compact-projects"></script>
+  <script src="script.js?v=20260920-projects-before-experience"></script>
 </body>
 </html>
